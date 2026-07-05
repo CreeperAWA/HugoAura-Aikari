@@ -12,6 +12,7 @@ namespace AikariPLS::Types::Constants::Init
 
         constexpr const char* HOSTNAME = "iot-broker-mis.seewo.com";
         constexpr const int PORT = 8883;
+        constexpr const int LOCAL_PORT = 8885;
         constexpr const char* TLS_CERT_IDENTIFIER = "mqtt";
     }  // namespace NetworkInit
 }  // namespace AikariPLS::Types::Constants::Init

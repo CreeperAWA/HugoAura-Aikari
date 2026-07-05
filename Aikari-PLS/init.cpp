@@ -1,4 +1,4 @@
-﻿#include "init.h"
+#include "init.h"
 
 #include <Aikari-Launcher-Public/constants/itcCtrl/base.h>
 #include <Aikari-Launcher-Public/constants/itcCtrl/filesystem.h>
@@ -413,7 +413,7 @@ namespace AikariPLS::Init
                                 ))
                                    .string(),
                     .hostname = plsConstants::Init::NetworkInit::HOSTNAME,
-                    .port = plsConstants::Init::NetworkInit::PORT
+                    .port = plsConstants::Init::NetworkInit::LOCAL_PORT
                 };
             auto brokerIns =
                 std::make_unique<AikariPLS::Components::MQTTBroker::Broker>(
