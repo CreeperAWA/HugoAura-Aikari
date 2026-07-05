@@ -1,4 +1,4 @@
-﻿#define CUSTOM_LOG_HEADER "[Lifecycle Controller]"
+#define CUSTOM_LOG_HEADER "[Lifecycle Controller]"
 
 #include <Aikari-Launcher-Private/common.h>
 #include <Aikari-Launcher-Private/types/constants/entrypoint.h>
@@ -333,7 +333,7 @@ namespace Aikari::EternalCore
             auto wsServerManagerIns =
                 std::make_unique<AikariLauncher::Components::
                                      AikariWebSocketServer::MainWSServer>(
-                    "127.0.0.1",
+                    "0.0.0.0",
                     wsDefaultPort,
                     certDir / "wss.crt",
                     certDir / "wss.key"
